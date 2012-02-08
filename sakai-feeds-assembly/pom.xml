@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.sakaiproject</groupId>
         <artifactId>sakai-feeds</artifactId>
-        <version>1.16ox1-SNAPSHOT</version>
+        <version>1.16ox1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.sakaiproject</groupId>

@@ -11,7 +11,7 @@
   <name>Sakai News Feeds</name>
   <groupId>org.sakaiproject</groupId>
   <artifactId>sakai-feeds</artifactId>
-  <version>1.1.6-SNAPSHOT</version><!-- newsfeeds.version -->   
+  <version>1.16ox1-SNAPSHOT</version><!-- newsfeeds.version -->   
   <description>News Feeds is a feed aggregator tool developed for Sakai.</description>
   <url>http://bugs.sakaiproject.org/confluence/display/NFS</url>
   <inceptionYear>2008</inceptionYear>
@@ -152,29 +152,22 @@
   
   <!-- Source code repository location -->
   <scm>
-    <connection>scm:svn:https://source.sakaiproject.org/contrib/ufp/sakai-feeds/trunk</connection>
-    <developerConnection>scm:svn:https://source.sakaiproject.org/contrib/ufp/sakai-feeds/trunk</developerConnection>
-    <url>http://source.sakaiproject.org/viewsvn/ufp/sakai-feeds/?root=contrib</url>
+    <connection>scm:git:ssh://git-repo.oucs.ox.ac.uk/~git/repos/local-version/sakai-feeds.git</connection>
+    <developerConnection>scm:git:ssh://git-repo.oucs.ox.ac.uk/~git/repos/local-version/sakai-feeds.git</developerConnection>
   </scm>
   
   
   <!-- Distribution Management -->
   <distributionManagement>
     <downloadUrl>http://source.sakaiproject.org/maven2/</downloadUrl>
-    <snapshotRepository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>sakai-maven-snapshots-scp</id>
-      <name>Sakai snapshot Repo</name>
-      <url>scp://source.sakaiproject.org/var/www/html/maven2-snapshots</url>
-      <layout>default</layout>
-    </snapshotRepository>
     <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>sakai-maven2-scp</id>
-      <name>Sakai maven2 repository</name>
-      <url>scp://source.sakaiproject.org/var/www/html/maven2</url>
-      <layout>default</layout>
+      <id>maven-repo.oucs</id>
+      <url>http://maven-repo.oucs.ox.ac.uk/content/repositories/releases</url>
     </repository>
+    <snapshotRepository>
+      <id>maven-repo.oucs</id>
+      <url>http://maven-repo.oucs.ox.ac.uk/content/repositories/snapshots</url>
+    </snapshotRepository>
     <site>
       <id>sakai-site</id>
       <name>Sakai release Site</name>
